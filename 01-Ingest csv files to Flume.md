@@ -38,10 +38,9 @@ agent1.sinks.hdfs-sink1_1.type = hdfs
 #Sink is /flume_import under hdfs
 
 agent1.sinks.hdfs-sink1_1.hdfs.path = /user/cloudera/flumecsv
-agent1.sinks.hdfs-sink1_1.hdfs.batchSize = 10
+agent1.sinks.hdfs-sink1_1.hdfs.batchSize = 1000
 agent1.sinks.hdfs-sink1_1.hdfs.rollSize = 0
-agent1.sinks.hdfs-sink1_1.hdfs.rollInterval = 0
-agent1.sinks.hdfs-sink1_1.hdfs.rollCount = 5
+agent1.sinks.hdfs-sink1_1.hdfs.rollCount = 10000
 agent1.sinks.hdfs-sink1_1.hdfs.writeFormat=Text
 
 agent1.sinks.hdfs-sink1_1.hdfs.fileType = DataStream
